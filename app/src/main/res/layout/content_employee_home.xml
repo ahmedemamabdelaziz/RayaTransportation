@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EmployeeHome"
+    tools:showIn="@layout/app_bar_employee_home">
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".EmployeeMap" />
+
+        <Button
+            android:id="@+id/findcar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:text="find Car" />
+
+
+        <ImageButton
+            android:id="@+id/opendrawereemployee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/ic_dehaze_black_24dp" />
+
+
+        <FrameLayout
+            android:id="@+id/myfarme"
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/fab_margin"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+
+                <Spinner
+                    android:id="@+id/spinner7"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/search_for_car"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="67dp"
+                    android:gravity="center" />
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_alignStart="@+id/spinner7"
+                    android:layout_centerVertical="true"
+                    android:dropDownSelector="#4a0037b7"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <Button
+                    android:id="@+id/search_for_car"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="38dp"
+                    android:dropDownSelector="#4a0037b7"
+                    android:spinnerMode="dropdown"
+                    android:text="search for avilable Car" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/search_for_car"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="14dp"
+                    android:dropDownSelector="#4a0037b7"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/spinner2"
+                    android:layout_marginStart="26dp"
+                    android:gravity="center"
+                    android:text="your Rout" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/textView7"
+                    android:layout_alignTop="@+id/spinner7"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center"
+                    android:text="Pickup Point" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView5"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Shift Time" />
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

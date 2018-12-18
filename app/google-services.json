@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "849904762677",
+    "firebase_url": "https://raya-transportation.firebaseio.com",
+    "project_id": "raya-transportation",
+    "storage_bucket": "raya-transportation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849904762677:android:8e1b4cf1bda4c210",
+        "android_client_info": {
+          "package_name": "com.example.emam.rayatransportation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849904762677-jhr97fpq54ru0pud84ak0oog0ng4hk6r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.emam.rayatransportation",
+            "certificate_hash": "8b87ef626465c98d781d0ecf6b941cabcbb8569d"
+          }
+        },
+        {
+          "client_id": "849904762677-ssajanek02q4jos5pkd5fjts40ibi5pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK0QexXcOIcmweDQCXn3xrKSRhL-r0Hg8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849904762677-ssajanek02q4jos5pkd5fjts40ibi5pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
